@@ -44,7 +44,7 @@ test ('Products exist', () => {
   const beans = screen.getByText('Beans');
   const cabbage= screen.getByText('Cabbage');
 
-  expect(apples).not.toBeInTheDocument()
+  expect(apples).toBeInTheDocument()
   expect(oranges).toBeInTheDocument();
   expect(beans).toBeInTheDocument();
   expect(cabbage).toBeInTheDocument();
